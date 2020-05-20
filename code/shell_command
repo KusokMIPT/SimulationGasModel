@@ -1,0 +1,42 @@
+ssh -i yandex-key admin@84.201.129.154
+
+cd /etc/ssh/
+sudo nano sshd_config
+cd ~
+
+
+
+sudo apt update -y
+sudo apt install -y git
+sudo apt install -y g++
+sudo apt install -y zip
+sudo apt-get -y remove python3.6
+sudo apt-get -y autoremove python3
+sudo apt-get -y autoremove --purge python
+sudo apt install -y python3.7
+sudo apt-get install -y python3-pip
+pip3 install matplotlib
+pip3 install tqdm
+sudo apt install -y ffmpeg
+
+git clone https://github.com/KusokMIPT/gas_simulation
+
+cd gas_simulation/code/
+g++ -O3 -o simulation -Wno-write-strings -std=c++17 main.cpp
+
+cd simulation_results/
+
+bash script.sh
+python3 render.py --engine ../simulation --particles 75000 --duration 10 --speed 800
+
+---
+>>>>>>> download from server
+scp -i yandex-key admin@84.201.130.209:/home/admin/gas_simulation/code/simulation_results/movie.mp4 /Users/aleksejpodkidysev/Downloads
+
+
+---
+>>>>>>>>>>>>ziped all files
+
+all_dir=`find . -name 'output*'`
+zip -r allres.zip $all_dir
+

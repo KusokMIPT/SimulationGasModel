@@ -1,0 +1,34 @@
+1000 266
+5000 405
+15000 1038
+20000 1512
+25000 2933
+50000 13085
+70000 6440
+100000 58418
+100 483
+\n ALL TIME : 483 seconds \n
+100 330
+\n ALL TIME : 330 seconds \n
+100 1
+\n ALL TIME : 1 seconds \n
+100 1
+\n ALL TIME : 1 seconds \n
+100 0
+\n ALL TIME : 0 seconds \n
+100 0
+\n ALL TIME : 0 seconds \n
+100 1
+\n ALL TIME : 1 seconds \n
+100 351
+\n ALL TIME : 351 seconds \n
+100 1
+\n ALL TIME : 1 seconds \n
+100 1
+\n ALL TIME : 1 seconds \n
+100 371
+\n ALL TIME : 371 seconds \n
+100 435
+\n ALL TIME : 435 seconds \n
+50000 9838
+\n ALL TIME : 9838 seconds \n
